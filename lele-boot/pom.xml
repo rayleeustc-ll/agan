@@ -6,23 +6,24 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.3.1.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.lele.boot</groupId>
     <artifactId>lele-boot</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>lele-boot</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
-
     <dependencies>
     </dependencies>
  <modules>
      <module>lele-boot-config</module>
      <module>lele-boot-helloworld</module>
+     <module>lele-boot-LogTest</module>
  </modules>
 
     <build>
