@@ -6,6 +6,7 @@
     <modules>
         <module>helloMQ</module>
         <module>rabbitmq-direct</module>
+        <module>rabbitmq-topic</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
