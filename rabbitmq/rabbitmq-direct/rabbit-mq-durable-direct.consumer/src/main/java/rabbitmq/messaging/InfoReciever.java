@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @RabbitListener(bindings = @QueueBinding(
         value= @Queue(value ="${mq.config.queue.info}",
-                autoDelete = "true"),
+                autoDelete = "false"),
         exchange = @Exchange(value ="${mq.config.exchange}",
             type = ExchangeTypes.DIRECT),
         key = "${mq.config.queue.info.routing.key}"

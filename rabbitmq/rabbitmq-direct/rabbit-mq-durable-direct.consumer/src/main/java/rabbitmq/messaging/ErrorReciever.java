@@ -6,16 +6,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 @RabbitListener(bindings = @QueueBinding(
-        value= @Queue(value ="${mq.config.queue.info}",
-                autoDelete = "true"),
+        value= @Queue(value ="${mq.config.queue.error}",
+                autoDelete = "false"),
         exchange = @Exchange(value ="${mq.config.exchange}",
             type = ExchangeTypes.DIRECT),
-        key = "${mq.config.queue.info.routing.key}"
+        key = "${mq.config.queue.error.routing.key}"
 ))
-public class InfoReciever {
+public class ErrorReciever {
 
     @RabbitHandler
     public void process(String msg){
-        System.out.println("Info reciever "+ msg);
+        System.out.println("error reciever "+ msg);
     }
 }
