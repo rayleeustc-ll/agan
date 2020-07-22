@@ -18,5 +18,6 @@ public class ErrorReciever {
     public void process(String msg){
         System.out.println("--------error reciever ------>"+ msg);
     }
+    //
 
 }
