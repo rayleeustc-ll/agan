@@ -19,5 +19,6 @@ public class ErrorReciever {
         System.out.println("--------error reciever ------>"+ msg);
     }
     //
+    //
 
 }
